@@ -6,6 +6,10 @@ import random
 
 def simulacionPedido():
     iterations = 260
+    restockCost = 52
+    restockQuantity = 100
+    stock = 100
+    cost = 0
     for i in range(iterations):
         dailyDemandRand = random.random()
         if(dailyDemandRand <= 0.02):
@@ -73,7 +77,25 @@ def simulacionPedido():
             #4
             clientWaitingTime = 4
 
-        
+        if(clientWaitingTime < deliveryTime):
+            dailyDemand = 0
+
+        cost += 100
+
+        if(stock > dailyDemand):
+            stock-= dailyDemand
+        else:
+            dailyDemand -= stock
+            stock = 0
+            if(clientWaitingTime < deliveryTime):
+                cost += 50* dailyDemand
+            else:
+                cost += 20* dailyDemand
+
+        if(stock  == 0):
+            cost+= restockCost * restockQuantity
+
+    print("Costos totales al usar 100 unidades de stock inicial y 100 de restock:", cost)
 
 
 
