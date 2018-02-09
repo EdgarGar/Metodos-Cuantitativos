@@ -48,7 +48,7 @@ for hora in range(horas):
                 estacionamiento +=  1
                 
     disponibles += estacionamiento #Lugares disponibles 
-    
+#promedios
 promedio_estacionado = float(coche_estacionado)/(clientes*horas)
 promedio_perdido = float(coche_perdido)/(clientes*horas)
 promedio_disponible = float(disponibles)/(6*horas)
