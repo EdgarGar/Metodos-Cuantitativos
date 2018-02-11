@@ -111,7 +111,7 @@ def simulacionPedido():
                 print("Al final del año quedaron", stock, " productos")
                 cost += 52 * stock
 
-        print("Costos totales al usar 100 unidades de stock inicial y", reorder, "de restock: $", cost, "\n")
+        print("Costos totales al usar 100 unidades de stock inicial y", reorder, "de restock cuando se encontraban 10 o menos unidades en inventario: $", cost, "\n")
         if(j == 0):
             lowestCost = cost
             bestReorder = reorder
