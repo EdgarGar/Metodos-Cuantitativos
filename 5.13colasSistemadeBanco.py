@@ -1,20 +1,20 @@
 '''
 Lucia | Adrian | Edgar | Fermin
-12.02.2018
+15.01.2018
 Programmed in Python 3 
 Used libraries:
 random 
 math 
 -------------------------------------------------------
-Colas de un sistema de banco 
+Colas de banco 
 
 '''
 import random
 import math
 
-dias = 2 #Numero de dias que correra la simulacion
+dias = 5 #Numero de dias que correra la simulacion
 segundos = 86400 #Segundos en un dia
-clientes = 40 #Clientes por 60 minutos 
+clientes = 40 #Clientes en 1 hora
 ocupado1 = ocupado2= ocupado3 = 0
 tiempofila1 = tiempofila2 = tiempofila3 = 0
 clientesformados = clientesatendidos =  clienteensistema = 0
@@ -59,9 +59,9 @@ for hora in range (dias):
             
         
         
-    
-print "Minutos transcurridos. {}".format(segundos/60);
+print "Dias transcurridos: {}".format(dias)
+print "Horas transcurridas. {}".format((segundos/3600)*dias);
 print "Clientes atendidos: {}".format(clientesatendidos);
-print "Minutos de clientes en el sistema: {}".format(tiempoensistema/60);
+print "Horas que los clientes pasaron en el sistema: {}".format(round(float(tiempoensistema)/3600,4));
 print "Clientes promedio atendidos al dia: {}".format(float(clientesatendidos)/dias);
-print "Minutos de clientes en el sistema promedio al dia: {}".format(float(tiempoensistema/60)/dias);
+print "Horas de clientes en el sistema promedio al dia: {}".format(round(float(float(tiempoensistema)/3600)/dias,4));
