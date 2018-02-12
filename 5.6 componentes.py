@@ -1,3 +1,13 @@
+'''
+Lucia | Adrian | Edgar | Fermin
+15.01.2018
+Programmed in Python 3 
+Used libraries:
+random 
+math 
+-------------------------------------------------------
+'''
+
 import numpy as np
 
 simulationTime = 20000
@@ -57,11 +67,10 @@ def pol2(simulationTime, comp1Time, comp2Time, comp3Time, comp4Time, compFee):
             comp2Time -= 1
             comp3Time -= 1
             comp4Time -= 1
-
-    print("*"*15)
+            
     print("In the new policy the componente Fee is of $",compFee)
     print("The machines worked for",simulationTime,"hours")
-    print("-"*20)
+
 
 pol1(simulationTime, comp1Time, comp2Time, comp3Time, comp4Time, compFee)
 pol2(simulationTime, comp1Time, comp2Time, comp3Time, comp4Time, compFee)

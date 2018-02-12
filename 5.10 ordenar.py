@@ -75,12 +75,9 @@ for day in range(0,260):
             holding += inventory
 
 
-
-
-print("-"*20)
 print("Reordering everytime stock hits:",limite )
 print("Lost Fee Cost: $",totMissing*25)
 print("Order Fee Cost: $", order*50)
 print("Holding Fee Cost: $",holding*26)
-print("-"*20)
+
 #print("Total demand:", totalDemand, "that would be",ceil(totalDemand/15),"reorders")

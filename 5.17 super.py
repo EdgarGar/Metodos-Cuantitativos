@@ -1,3 +1,13 @@
+'''
+Lucia | Adrian | Edgar | Fermin
+15.01.2018
+Programmed in Python 3 
+Used libraries:
+random 
+math 
+-------------------------------------------------------
+'''
+
 from numpy.random import poisson
 from random import randint
 from math import ceil,floor
@@ -31,7 +41,6 @@ for team in range(4,7):
 			wait += trucks * (workMins - nextHour)
 	workSalary = team * ((workMins/60.0) * 25)
 	waitCost = (wait/60.0) * 50
-	print("∞"*20)
 	print("Number of workers:",team)
 	print("Final cost: $", "{0:.2f}".format(workSalary+waitCost))
 	print("Hours worked:", "{0:.2f}".format(workMins/60.0))

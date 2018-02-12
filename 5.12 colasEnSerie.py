@@ -1,9 +1,15 @@
+'''
+Lucia | Adrian | Edgar | Fermin
+15.01.2018
+Programmed in Python 3 
+Used libraries:
+random 
+math 
+-------------------------------------------------------
+'''
+
 import random
 import numpy as np
-
-
-
-
 
 def simColasEnSerie():
     iterations = 5000
@@ -56,14 +62,6 @@ def simColasEnSerie():
         print("En promedio la primera cola es de mayor tamaño")
     else:
         print("En promedio la segunda cola es de mayor tamaño")
-
-
-
-
-
-
-
-
 
 
 

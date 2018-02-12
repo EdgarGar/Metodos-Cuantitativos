@@ -1,3 +1,13 @@
+'''
+Lucia | Adrian | Edgar | Fermin
+15.01.2018
+Programmed in Python 3 
+Used libraries:
+random 
+math 
+-------------------------------------------------------
+'''
+
 import numpy as np
 
 n = 6

@@ -1,5 +1,14 @@
-import random
+'''
+Lucia | Adrian | Edgar | Fermin
+15.01.2018
+Programmed in Python 3 
+Used libraries:
+random 
+math 
+-------------------------------------------------------
+'''
 
+import random
 
 # Para este problema se simulo para una maquina con un tecnico en ella dado que no tenia las probablidades del tiempo de servicio para mas de un tecnico.
 repairTime = 0
@@ -54,8 +63,7 @@ workerSalary = totalRepairTime * 50
 avgRepair = repairTime / 1500
 avgDisaster = totalDisasterTime / 1500
 
-print("-"*20)
 print("The worker salary for", hours,"hours is", workerSalary)
 print("Repair time", totalRepairTime)
 print("The averga time the machines lasted without failure was", avgDisaster)
-print("-"*20)
+

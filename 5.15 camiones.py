@@ -1,3 +1,14 @@
+'''
+Lucia | Adrian | Edgar | Fermin
+15.01.2018
+Programmed in Python 3 
+Used libraries:
+random 
+math 
+-------------------------------------------------------
+'''
+
+
 import random
 import math
 
@@ -39,8 +50,7 @@ for i in range(0,250):
 
 productOutsourced /= 250
 
-print("\n","-"*20)
 print("Outsourcing investment: $","{0:.2f}".format(outsourcing))
 print("You can by ", math.ceil(outsourcing/100000),"trucks with the investment of outsourcing")
 print("You'll nead a total of",math.ceil(productOutsourced/5),"trucks (5Ton load) to transport", math.ceil(productOutsourced),"Tons")
-print(" -"*20,"\n")
+

@@ -6,11 +6,6 @@ Used libraries:
 random 
 math 
 -------------------------------------------------------
-Una tineda tiene un lote de estacionamiento con 6 lugares disponibles. 
-Los clientes llegan en forma aleaotoria de acuerdo a un proceso poisson a una razon media
-de 10 clientes por hora, y se van inmediatamente si no existen lugares disponibles
-El tiempo que un auto permanece en el estacionamiento sigue una distribucion uniforme entre 10 y 30 minutos. 
-
 '''
 
 import random

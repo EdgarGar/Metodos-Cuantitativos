@@ -1,8 +1,13 @@
-
+'''
+Lucia | Adrian | Edgar | Fermin
+15.01.2018
+Programmed in Python 3 
+Used libraries:
+random 
+math 
+-------------------------------------------------------
+'''
 import random
-
-
-
 
 def simulacionPedido():
     iterations = 260
@@ -20,8 +25,6 @@ def simulacionPedido():
 
             if(stock <= 10):
                 stock += reorder
-
-
             dailyDemandRand = random.random()
             if(dailyDemandRand <= 0.02):
                 #25
@@ -53,10 +56,7 @@ def simulacionPedido():
             elif(dailyDemandRand > 0.98 and dailyDemandRand <= 1.00):
                 #34
                 dailyDemand = 34
-
             deliveryTimeRand = random.random()
-
-
             if(deliveryTimeRand <= 0.20):
                 #1
                 deliveryTime = 1
@@ -69,9 +69,7 @@ def simulacionPedido():
             elif(deliveryTimeRand > 0.75 and deliveryTimeRand <= 1.00):
                 #4
                 deliveryTime = 4
-
             clientWaitingTimeRand = random.random()
-
             if(clientWaitingTimeRand <= 0.40):
                 #0
                 clientWaitingTime = 0
@@ -87,10 +85,8 @@ def simulacionPedido():
             elif(clientWaitingTimeRand > 0.90 and clientWaitingTimeRand <= 1.00):
                 #4
                 clientWaitingTime = 4
-
             if(clientWaitingTime < deliveryTime):
                 dailyDemand = 0
-
             cost += 100
 
 
@@ -122,9 +118,6 @@ def simulacionPedido():
         cost = 0
 
     print("La cantidad de reorden optima es:", bestReorder)
-
-
-
 
 
 if __name__ == '__main__':
