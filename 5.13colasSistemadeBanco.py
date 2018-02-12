@@ -6,7 +6,7 @@ Used libraries:
 random 
 math 
 -------------------------------------------------------
-Colas de banco 
+Colas de un sistema de banco 
 
 '''
 import random
